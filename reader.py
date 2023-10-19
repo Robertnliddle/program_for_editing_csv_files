@@ -55,12 +55,14 @@ else:
         validate_field_section(rdx, cdx, table)
         value_to_be_changed = table[rdx][cdx]
         print(f"Changing {value_to_be_changed} into {val}")
+        # does the change
         table[rdx][cdx] = val
         # counts like this 0, 1, 2, 3 not from 1 (banners counts as 0 if you have one)
 
     display_table(table, sep="*")
 
     save_csv_file(table, dst)
+    # saves to new file
 
 
 if __name__ == '__main__':
