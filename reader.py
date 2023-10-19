@@ -49,7 +49,7 @@ else:
 
     for chg in changes:
         print(chg)
-        rdx, cdx, val = chg.split(';')
+        rdx, cdx, val = chg.split(',')
         rdx = int(rdx)
         cdx = int(cdx)
         validate_field_section(rdx, cdx, table)
